@@ -1,3 +1,11 @@
+# This is my integrify react-assignment and it contains:
+- Functional React components
+- useState,
+- useEffect,
+- useParams,
+- Material UI styling and icon
+- Button and Card component with page navigation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
