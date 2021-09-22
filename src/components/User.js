@@ -21,21 +21,21 @@ const User = () => {
             <section>
                 <Link to="/"><ArrowBackIcon fontSize="inherit" />Back Home
                 </Link>
-                <div class="flexbox-container">
+                {user && <div class="flexbox-container">
                     <div class="flexbox-item">
-                        <p>- name: {user?.name}</p>
-                        <p>- username: {user?.username}</p>
-                        <p>- email: {user?.email}</p>
-                        <p>- phone: {user?.phone}</p>
-                        <p>- company: {user?.company.name}</p>
-                        <p>- website: {user?.website}</p>
+                        <p>- name: {user.name}</p>
+                        <p>- username: {user.username}</p>
+                        <p>- email: {user.email}</p>
+                        <p>- phone: {user.phone}</p>
+                        <p>- company: {user.company.name}</p>
+                        <p>- website: {user.website}</p>
                         <p>- address: </p>
-                        <li>street: {user?.address.street}</li>
-                        <li>suite: {user?.address.suite}</li>
-                        <li>city: {user?.address.city}</li>
-                        <li>zipcode: {user?.address.zipcode}</li>
+                        <li>street: {user.address.street}</li>
+                        <li>suite: {user.address.suite}</li>
+                        <li>city: {user.address.city}</li>
+                        <li>zipcode: {user.address.zipcode}</li>
                     </div>
-                </div>
+                </div>}
 
             </section>
         </>

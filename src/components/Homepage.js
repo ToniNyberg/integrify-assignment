@@ -10,7 +10,7 @@ import Avatar from '@mui/material/Avatar';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
-    root: { display: "flex", flexWrap: "wrap" },
+    root: { display: "flex", flexWrap: "wrap", justifyContent: "center" },
     card: { width: "240px", height: "300px", borderRadius: "8px" },
     cardContent: { padding: "20px", textAlign: "center", margin: "auto" }
 });
@@ -28,10 +28,7 @@ const Users = () => {
     }, [])
 
     return (
-        <div
-            className={classes.root}
-        // style={{ display: "flex", flexWrap: "wrap" }}
-        >
+        <div className={classes.root}>
             {users.map((user) => {
                 const { id, name, username, website } = user
 
